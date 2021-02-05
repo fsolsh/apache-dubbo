@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: dubbo-provider
+dubbo:
+  config:
+    multiple: true
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  application:
+    name: dubbo-provider
+  protocols:
+    dubbo:
+      name: dubbo
+      port: 28080
+    rest:
+      name: rest
+      port: 9999
